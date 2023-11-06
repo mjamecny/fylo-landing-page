@@ -26,3 +26,7 @@ body {
   line-height: 1.5;
   color: var(--very-dark-blue);
 }
+
+.container {
+  padding: 2.4rem;
+}
