@@ -30,3 +30,26 @@ body {
 .container {
   padding: 2.4rem;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.header-nav {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.header-nav a {
+  font-size: 1.4rem;
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
