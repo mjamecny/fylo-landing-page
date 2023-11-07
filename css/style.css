@@ -225,3 +225,63 @@ h3 {
 .cta-text {
   color: var(--light-grayish-blue);
 }
+
+.footer {
+  background-color: var(--very-dark-blue);
+  padding-block: 6.4rem;
+  padding-inline: 2.4rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+}
+
+.footer-logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  color: var(--light-grayish-blue);
+}
+
+.footer-logo {
+  fill: var(--light-grayish-blue);
+  width: 18rem;
+}
+
+.footer-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  color: var(--light-grayish-blue);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.6rem;
+  justify-self: center;
+}
+
+.footer-social svg {
+  font-size: 3rem;
+  fill: var(--light-grayish-blue);
+}
