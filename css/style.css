@@ -2,7 +2,9 @@
   --very-dark-blue: hsl(243, 87%, 12%);
   --desaturated-blue: hsl(238, 22%, 44%);
   --bright-blue: hsl(224, 93%, 58%);
+  --light-bright-blue: hsl(224, 93%, 75%);
   --moderate-cyan: hsl(170, 45%, 43%);
+  --light-moderate-cyan: hsl(170, 45%, 63%);
   --light-grayish-blue: hsl(240, 75%, 98%);
   --light-gray: hsl(0, 0%, 75%);
 
@@ -284,4 +286,156 @@ h3 {
 .footer-social svg {
   font-size: 3rem;
   fill: var(--light-grayish-blue);
+}
+
+@media (min-width: 48em) {
+  .btn {
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: var(--light-bright-blue);
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .hero-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .heading {
+    text-align: left;
+  }
+
+  .hero__description {
+    text-align: left;
+  }
+
+  .cta-box {
+    flex-direction: row;
+  }
+
+  .cta-box .input {
+    flex: 2;
+  }
+
+  .cta-box .btn {
+    flex: 1;
+  }
+
+  .feature-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: flex-start;
+  }
+
+  .feature-heading {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .feature-text {
+    color: var(--very-dark-blue);
+  }
+
+  .btn-feature:hover {
+    color: var(--light-moderate-cyan);
+  }
+
+  .cta-heading {
+    text-align: left;
+  }
+
+  .cta .cta-box {
+    flex-direction: column;
+  }
+
+  .cta .cta-box .btn {
+    align-self: flex-start;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer-social {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .footer-nav-link {
+    transition: color 0.3s;
+  }
+
+  .footer-nav-link:hover {
+    color: var(--desaturated-blue);
+  }
+
+  .footer-social a svg {
+    transition: fill 0.3s;
+  }
+
+  .footer-social a svg:hover {
+    fill: var(--desaturated-blue);
+  }
+}
+
+@media (min-width: 62em) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-social {
+    grid-column: 4/5;
+  }
+}
+
+@media (min-width: 73em) {
+  .header,
+  .hero,
+  .feature,
+  .cta,
+  .footer {
+    padding-inline: 4.8rem;
+  }
+
+  .hero-box {
+    padding-inline-end: 4.8rem;
+  }
+
+  .heading {
+    font-size: 3.6rem;
+  }
+
+  .feature-heading {
+    font-size: 3.6rem;
+  }
+
+  .feature-text {
+    padding-inline-end: 4.8rem;
+  }
+
+  .testimonial {
+    width: 50%;
+  }
+
+  .cta-heading {
+    font-size: 3.6rem;
+  }
+
+  .cta-text-box {
+    padding-inline-end: 6.4rem;
+  }
+
+  .cta .cta-box {
+    padding-inline: 4.8rem;
+  }
 }
