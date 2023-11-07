@@ -19,46 +19,83 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <img src="imgs/logo.svg" alt="logo" class="logo" />
-        <nav>
-          <ul class="header-nav">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Sign In</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="hero">
-        <div class="grid">
-          <img
-            src="imgs/illustration-1.svg"
-            alt="illustration"
-            class="illustration"
-          />
-          <div class="hero-box">
-            <h2 class="heading">
-              All your files in one secure location, accessible anywhere.
-            </h2>
-            <p class="hero__description">
-              Fylo stores your most important files in one secure location.
-              Access them wherever you need, share and collaborate with friends,
-              family, and co-workers.
+    <header class="header">
+      <img src="imgs/logo.svg" alt="logo" class="logo" />
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="grid">
+        <img
+          src="imgs/illustration-1.svg"
+          alt="illustration"
+          class="illustration"
+        />
+        <div class="hero-box">
+          <h2 class="heading">
+            All your files in one secure location, accessible anywhere.
+          </h2>
+          <p class="hero__description">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <div class="cta-box">
+            <input
+              class="input input--blue"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+            />
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img src="imgs/bg-curve-mobile.svg" alt="curve" class="curve" />
+    <section class="feature">
+      <div class="grid">
+        <img
+          src="imgs/illustration-2.svg"
+          alt="illustration"
+          class="illustration"
+        />
+        <div class="feature-box">
+          <h2 class="feature-heading">Stay productive, wherever you are</h2>
+          <p class="feature-text">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+            <br /><br />
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <a class="btn-feature" href="#"
+            >See how Fylo works
+            <span><img src="imgs/icon-arrow.svg" alt="arrow icon" /></span
+          ></a>
+          <div class="testimonial">
+            <img src="imgs/icon-quotes.svg" alt="quotes icon" />
+            <p class="testimonial-text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
             </p>
-            <div class="cta-box">
-              <input
-                class="input input--blue"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email..."
-              />
-              <button class="btn">Get Started</button>
+            <div class="user-box">
+              <img src="imgs/avatar-testimonial.jpg" alt="user avatar" />
+              <div class="user-details">
+                <p class="user-name">Kyle Burton</p>
+                <p class="user-title">Founder & CEO, Huddle</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
