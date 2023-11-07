@@ -63,6 +63,11 @@ h3 {
   width: 100%;
 }
 
+.curve {
+  display: block;
+  width: 100%;
+}
+
 .btn {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
@@ -84,6 +89,8 @@ h3 {
 .header {
   display: flex;
   justify-content: space-between;
+  padding-inline: 2.4rem;
+  padding-block-start: 2.4rem;
 }
 
 .logo {
@@ -105,6 +112,7 @@ h3 {
 }
 
 .hero {
+  padding-inline: 2.4rem;
   padding-block: 6.4rem;
 }
 
@@ -115,4 +123,81 @@ h3 {
 }
 .hero__description {
   text-align: center;
+}
+
+.feature {
+  padding-block: 6.4rem;
+  padding-inline: 2.4rem;
+  background-color: var(--light-grayish-blue);
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.feature-heading {
+  font-size: 1.8rem;
+}
+
+.feature-text {
+  color: var(--light-gray);
+}
+
+.btn-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: var(--moderate-cyan);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--moderate-cyan);
+}
+
+.btn-feature span {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  border-radius: var(--border-radius-md);
+  background-color: #fff;
+  padding: 2.4rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-box img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.user-title {
+  font-size: 1rem;
 }
